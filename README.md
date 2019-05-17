@@ -1,4 +1,5 @@
 # OSINT Omnibus
+#Working on PARROTSEC
 - Developed & maintained by [InQuest](https://www.inquest.net)
 - ![Release](https://img.shields.io/badge/Release-Beta-blue.svg)
 - [![Rawsec's CyberSecurity Inventory](http://list.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat_without_logo.svg)](http://list.rawsec.ml/tools.html#Omnibus)
@@ -86,7 +87,7 @@ When you first run the CLI, you'll be greeted by a help menu with some basic inf
 Omnibus tries to use commands that mimic some common Linux commands for familiarity and ease of use. For example, the command `cat` to show information about and artifact, `rm` to remove an artifact from the database, `ls` for view current session artifacts, and output redirection support for any command using the `>` character.
 
 As an example of output redirection, if you wish to retrieve the details of an artifact named "inquest.net" saved to a JSON file on your local disk you'd simply run the command:
-`cat inquest.net > inquest-report.json` and there it would be! 
+`cat inquest.net > inquest-report.json` and there it would be!
 This feature also works with full file paths instead of relative paths.
 
 The high level commands used in Omnibus most often are:
@@ -225,4 +226,3 @@ For example, if you wish to store the output of a VirusTotal lookup for a host t
 * `virustotal inquest.net > vt-lookup.json`
 
 By default the redirected output files are saved in the current working directory, therefore "omnibus/", but if you specify a full path such as `virustotal inquest.net > /home/adam/intel/cases/001/vt-lookup.json` the JSON formatted output will be saved there.
-
